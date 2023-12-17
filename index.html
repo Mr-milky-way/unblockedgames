@@ -1,220 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9776044623882774"
-     crossorigin="anonymous"></script>
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9776044623882774" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="icon" href="../canvas.ico" />
     <audio autoplay loop>
-        <source src="deep-space-samurai.mp3" type="audio/mpeg">
-        <source src="fluxxwave.mp3" type="audio/mpeg">
+      <source src="deep-space-samurai.mp3" type="audio/mpeg">
+      <source src="fluxxwave.mp3" type="audio/mpeg">
     </audio>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background:
-            calc( .9*10px) calc( .9*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 20% 20%,#0000 75%,rgba(0, 0, 0, 0.5) 0),
-            calc(-.1*10px) calc(-.1*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 20% 20%,#0000 75%,rgba(0, 0, 0, 0.5) 0),
-            calc( .7*10px) calc( .7*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 40% 40%,#0000 75%,#000000 0),
-            calc(-.3*10px) calc(-.3*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 40% 40%,#0000 75%,#000000 0),
-            conic-gradient(from 90deg at 20% 20%,rgba(0, 0, 0, 0.5) 25%,#000000 0) 
-            0 0/10px 10px;
-            text-align: center;
-            margin: 50px;
-        }
-
-        .container {   
-            background: rgba(255,255,255,0);
-            -webkit-backdrop-filter: blur(3px);
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255,255,255,0.25);
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .button:nth-child(odd) {
-            background: #000000;
-            background: -webkit-linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
-            background: linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
-        }
-
-        .button:nth-child(even) {
-            background: #000000;
-            background: -webkit-linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
-            background: linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
-        }
-
-        .button:hover {
-            background: #000000;
-            background: -webkit-linear-gradient(0deg, #9b9b9b 0%, #000000 100%);
-            background: linear-gradient(0deg, #9b9b9b 0%, #000000 100%);
-        }
+      body {
+        font-family: 'Arial', sans-serif;
+        background:
+          calc(.9*10px) calc(.9*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 20% 20%, #0000 75%, rgba(0, 0, 0, 0.5) 0),
+          calc(-.1*10px) calc(-.1*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 20% 20%, #0000 75%, rgba(0, 0, 0, 0.5) 0),
+          calc(.7*10px) calc(.7*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 40% 40%, #0000 75%, #000000 0),
+          calc(-.3*10px) calc(-.3*10px)/calc(2*10px) calc(2*10px) conic-gradient(at 40% 40%, #0000 75%, #000000 0),
+          conic-gradient(from 90deg at 20% 20%, rgba(0, 0, 0, 0.5) 25%, #000000 0) 0 0/10px 10px;
+        text-align: center;
+        margin: 50px;
+      }
+      .container {
+        background: rgba(255, 255, 255, 0);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .button:nth-child(odd) {
+        background: #000000;
+        background: -webkit-linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
+        background: linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
+      }
+      .button:nth-child(even) {
+        background: #000000;
+        background: -webkit-linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
+        background: linear-gradient(0deg, #000000 0%, #9b9b9b 100%);
+      }
+      .button:hover {
+        background: #000000;
+        background: -webkit-linear-gradient(0deg, #9b9b9b 0%, #000000 100%);
+        background: linear-gradient(0deg, #9b9b9b 0%, #000000 100%);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="hypnotic"></div>
-        <style>
+      <div class="hypnotic"></div>
+      <style>
         .hypnotic {
-           width: 56px;
-           height: 56px;
-           border: 2.2px solid #ffffff;
-           display: grid;
-           animation: hypnotic-q3fddx 4s infinite linear;
+          width: 56px;
+          height: 56px;
+          border: 2.2px solid #ffffff;
+          display: grid;
+          animation: hypnotic-q3fddx 4s infinite linear;
         }
-
         .hypnotic::before,
         .hypnotic::after {
-           content: "";
-           grid-area: 1/1;
-           margin: auto;
-           width: 70.7%;
-           height: 70.7%;
-           border: 2.2px solid #ffffff;
-           animation: inherit;
+          content: "";
+          grid-area: 1/1;
+          margin: auto;
+          width: 70.7%;
+          height: 70.7%;
+          border: 2.2px solid #ffffff;
+          animation: inherit;
         }
-
         .hypnotic::after {
-           width: 50%;
-           height: 50%;
-           border: 2.2px solid #ffffff;
-           animation-duration: 2s;
+          width: 50%;
+          height: 50%;
+          border: 2.2px solid #ffffff;
+          animation-duration: 2s;
         }
-
         @keyframes hypnotic-q3fddx {
-           100% {
-              transform: rotate(1turn);
-            }
+          100% {
+            transform: rotate(1turn);
+          }
         }
-        </style>
-        Andrew Douglass 2023 All rights reserved
-        <div class="glitch-wrapper">
-   <div class="glitch" data-glitch="Games">Games</div>
-</div>
-
-<style>
-.glitch-wrapper {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   background: rgba(255,255,255,0);
-}
-
-.glitch {
-   position: relative;
-   font-size: 80px;
-   font-weight: 700;
-   line-height: 1.2;
-   color: #222;
-   letter-spacing: 5px;
-   z-index: 1;
-}
-
-.glitch:before,
-.glitch:after {
-   display: block;
-   content: attr(data-glitch);
-   position: absolute;
-   top: 0;
-   left: 0;
-   opacity: 0.8;
-}
-
-.glitch:before {
-   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-   color: #0ff;
-   z-index: -1;
-}
-
-.glitch:after {
-   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-   color: #ff00ff;
-   z-index: -2;
-}
-
-@keyframes glitch-color {
-   0% {
-      transform: translate(0);
-   }
-
-   20% {
-      transform: translate(-3px, 3px);
-   }
-
-   40% {
-      transform: translate(-3px, -3px);
-   }
-
-   60% {
-      transform: translate(3px, 3px);
-   }
-
-   80% {
-      transform: translate(3px, -3px);
-   }
-
-   to {
-      transform: translate(0);
-   }
-}
-</style>
-        <a href="https://mr-milky-way.github.io/Time-Shooter-2/" class="button">Play Time Shooter 2</a>
-        <a href="https://mr-milky-way.github.io/Eaglercraft-1.5.2/" class="button">Play Eaglercraft 1.5.2</a>
-        <a href="https://mr-milky-way.github.io/Slope-Game/" class="button">Play Slope</a>
-        <a href="https://mr-milky-way.github.io/rocketpult/" class="button">Play Rocketpult</a>
-        <a href="https://mr-milky-way.github.io/monkey-mart/" class="button">Play Monkey Mart</a>
-        <a href="https://mr-milky-way.github.io/cookieclicker/" class="button">Play Cookie Clicker</a>
-        <a href="https://mr-milky-way.github.io/madalin-stunt-cars-2/" class="button">Play Madalin Stunt Cars 2</a>
-        <a href="https://mr-milky-way.github.io/madalin-stunt-cars-multiplayer/" class="button">Play Madalin Stunt Cars Multiplayer</a>
-        <a href="https://mr-milky-way.github.io/drive-mad/" class="button">Play Drive Mad</a>
-        <a href="https://mr-milky-way.github.io/1v1lol/" class="button">Play 1v1 LOL</a>
-        <a href="https://mr-milky-way.github.io/zombs-royale/" class="button">Play Zombs Royale</a>
-        <a href="https://mr-milky-way.github.io/You-Are-Jeff-Bezos/" class="button">Play You Are Jeff Bezos</a>
-        <a href="https://mr-milky-way.github.io/xx142-b2exe/" class="button">Play xx142-b2exe</a>
-        <a href="https://mr-milky-way.github.io/webgl-fluid-simulation/" class="button">Play Webgl Fluid Simulation</a>
-        <a href="https://mr-milky-way.github.io/tunnel-rush/" class="button">Play Tunnel Rush</a>
-        <a href="https://mr-milky-way.github.io/train-ride/" class="button">Play Train Ride Home</a>
-        <a href="https://mr-milky-way.github.io/thwack/" class="button">Play Thwack</a>
-        <a href="https://mr-milky-way.github.io/thisistheonlyleve/" class="button">Play This Is The Only Level</a>
-        <a href="https://mr-milky-way.github.io/thermomorph/" class="button">Play Thermomorph</a>
-        <a href="https://mr-milky-way.github.io/territorial.io/" class="button">Play Territorial.io</a>
-        <a href="https://mr-milky-way.github.io/achievement-unlocked/" class="button">Play Achievement Unlocked</a>
-        <a href="https://mr-milky-way.github.io/acsiispace/" class="button">Play Acsiispace</a>
-        <a href="https://mr-milky-way.github.io/awesome-tanks-2/" class="button">Play Awesome Tanks 2</a>
-        <a href="https://mr-milky-way.github.io/Burrito-Bison-Launcha-Libre/" class="button">Play Burrito Bison Launcha Libre</a>
-        <a href="https://mr-milky-way.github.io/bloons-td/" class="button">Play Bloons TD</a>
-        <a href="https://mr-milky-way.github.io/bloons-td-2/" class="button">Play Bloons TD 2</a>
-        <a href="https://mr-milky-way.github.io/breaking-the-bank/" class="button">Play Breaking The Bank</a>
-        <a href="https://mr-milky-way.github.io/stealing-the-diamond/" class="button">Play Stealing The Diamond</a>
-        <a href="https://mr-milky-way.github.io/krunker/" class="button">Play Krunker</a>
-        <a href="https://mr-milky-way.github.io/learn-to-fly-2/" class="button">Play Learn To Fly 2</a>
-        <a href="https://mr-milky-way.github.io/pandemic-2/" class="button">Play Pandemic 2</a>
-        <a href="https://mr-milky-way.github.io/picohot/" class="button">Play Picohot</a>
-        <a href="https://mr-milky-way.github.io/riddle-school/" class="button">Play Riddle School</a>
-        <a href="https://mr-milky-way.github.io/Riddle-School-2/" class="button">Play Riddle School 2</a>
-        <a href="https://mr-milky-way.github.io/Riddle-School-3/" class="button">Play Riddle School 3</a>
-        <a href="https://mr-milky-way.github.io/Riddle-School-4/" class="button">Play Riddle School 4</a>
-        <a href="https://mr-milky-way.github.io/Riddle-School-5/" class="button">Play Riddle School 5</a>
-        <a href="https://mr-milky-way.github.io/riddle-transfer/" class="button">Play Riddle Transfer</a>
-        <a href="https://mr-milky-way.github.io/Riddle-Transfer-2/" class="button">Play Riddle Transfer 2</a>
-        <a href="https://mr-milky-way.github.io/StackBall/" class="button">Play Stackball.io</a>
-        <a href="https://mr-milky-way.github.io/rocket-soccer-derby/" class="button">Play Rocket Soccer Derby</a>
+      </style>
+      Andrew Douglass 2023 All rights reserved
+      <div class="glitch-wrapper">
+        <div class="glitch" data-glitch="Games">Games</div>
+      </div>
+      <style>
+        .glitch-wrapper {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: rgba(255, 255, 255, 0);
+        }
+        .glitch {
+          position: relative;
+          font-size: 80px;
+          font-weight: 700;
+          line-height: 1.2;
+          color: #222;
+          letter-spacing: 5px;
+          z-index: 1;
+        }
+        .glitch:before,
+        .glitch:after {
+          display: block;
+          content: attr(data-glitch);
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0.8;
+        }
+        .glitch:before {
+          animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+          color: #0ff;
+          z-index: -1;
+        }
+        .glitch:after {
+          animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+          color: #ff00ff;
+          z-index: -2;
+        }
+        @keyframes glitch-color {
+          0% {
+            transform: translate(0);
+          }
+          20% {
+            transform: translate(-3px, 3px);
+          }
+          40% {
+            transform: translate(-3px, -3px);
+          }
+          60% {
+            transform: translate(3px, 3px);
+          }
+          80% {
+            transform: translate(3px, -3px);
+          }
+          to {
+            transform: translate(0);
+          }
+        }
+      </style>
+      <a href="https://mr-milky-way.github.io/Time-Shooter-2/" class="button">Play Time Shooter 2</a>
+      <a href="https://mr-milky-way.github.io/Eaglercraft-1.5.2/" class="button">Play Eaglercraft 1.5.2</a>
+      <a href="https://mr-milky-way.github.io/Slope-Game/" class="button">Play Slope</a>
+      <a href="https://mr-milky-way.github.io/rocketpult/" class="button">Play Rocketpult</a>
+      <a href="https://mr-milky-way.github.io/monkey-mart/" class="button">Play Monkey Mart</a>
+      <a href="https://mr-milky-way.github.io/cookieclicker/" class="button">Play Cookie Clicker</a>
+      <a href="https://mr-milky-way.github.io/madalin-stunt-cars-2/" class="button">Play Madalin Stunt Cars 2</a>
+      <a href="https://mr-milky-way.github.io/madalin-stunt-cars-multiplayer/" class="button">Play Madalin Stunt Cars Multiplayer</a>
+      <a href="https://mr-milky-way.github.io/drive-mad/" class="button">Play Drive Mad</a>
+      <a href="https://mr-milky-way.github.io/1v1lol/" class="button">Play 1v1 LOL</a>
+      <a href="https://mr-milky-way.github.io/zombs-royale/" class="button">Play Zombs Royale</a>
+      <a href="https://mr-milky-way.github.io/You-Are-Jeff-Bezos/" class="button">Play You Are Jeff Bezos</a>
+      <a href="https://mr-milky-way.github.io/xx142-b2exe/" class="button">Play xx142-b2exe</a>
+      <a href="https://mr-milky-way.github.io/webgl-fluid-simulation/" class="button">Play Webgl Fluid Simulation</a>
+      <a href="https://mr-milky-way.github.io/tunnel-rush/" class="button">Play Tunnel Rush</a>
+      <a href="https://mr-milky-way.github.io/train-ride/" class="button">Play Train Ride Home</a>
+      <a href="https://mr-milky-way.github.io/thwack/" class="button">Play Thwack</a>
+      <a href="https://mr-milky-way.github.io/thisistheonlyleve/" class="button">Play This Is The Only Level</a>
+      <a href="https://mr-milky-way.github.io/thermomorph/" class="button">Play Thermomorph</a>
+      <a href="https://mr-milky-way.github.io/territorial.io/" class="button">Play Territorial.io</a>
+      <a href="https://mr-milky-way.github.io/achievement-unlocked/" class="button">Play Achievement Unlocked</a>
+      <a href="https://mr-milky-way.github.io/acsiispace/" class="button">Play Acsiispace</a>
+      <a href="https://mr-milky-way.github.io/awesome-tanks-2/" class="button">Play Awesome Tanks 2</a>
+      <a href="https://mr-milky-way.github.io/Burrito-Bison-Launcha-Libre/" class="button">Play Burrito Bison Launcha Libre</a>
+      <a href="https://mr-milky-way.github.io/bloons-td/" class="button">Play Bloons TD</a>
+      <a href="https://mr-milky-way.github.io/bloons-td-2/" class="button">Play Bloons TD 2</a>
+      <a href="https://mr-milky-way.github.io/breaking-the-bank/" class="button">Play Breaking The Bank</a>
+      <a href="https://mr-milky-way.github.io/stealing-the-diamond/" class="button">Play Stealing The Diamond</a>
+      <a href="https://mr-milky-way.github.io/krunker/" class="button">Play Krunker</a>
+      <a href="https://mr-milky-way.github.io/learn-to-fly-2/" class="button">Play Learn To Fly 2</a>
+      <a href="https://mr-milky-way.github.io/pandemic-2/" class="button">Play Pandemic 2</a>
+      <a href="https://mr-milky-way.github.io/picohot/" class="button">Play Picohot</a>
+      <a href="https://mr-milky-way.github.io/riddle-school/" class="button">Play Riddle School</a>
+      <a href="https://mr-milky-way.github.io/Riddle-School-2/" class="button">Play Riddle School 2</a>
+      <a href="https://mr-milky-way.github.io/Riddle-School-3/" class="button">Play Riddle School 3</a>
+      <a href="https://mr-milky-way.github.io/Riddle-School-4/" class="button">Play Riddle School 4</a>
+      <a href="https://mr-milky-way.github.io/Riddle-School-5/" class="button">Play Riddle School 5</a>
+      <a href="https://mr-milky-way.github.io/riddle-transfer/" class="button">Play Riddle Transfer</a>
+      <a href="https://mr-milky-way.github.io/Riddle-Transfer-2/" class="button">Play Riddle Transfer 2</a>
+      <a href="https://mr-milky-way.github.io/StackBall/" class="button">Play Stackball.io</a>
+      <a href="https://mr-milky-way.github.io/rocket-soccer-derby/" class="button">Play Rocket Soccer Derby</a>
     </div>
-</body>
+  </body>
 </html>

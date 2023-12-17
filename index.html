@@ -66,6 +66,40 @@
 </head>
 <body>
     <div class="container">
+        <div class="hypnotic"></div>
+        <style>
+        .hypnotic {
+           width: 56px;
+           height: 56px;
+           border: 2.2px solid #ffffff;
+           display: grid;
+           animation: hypnotic-q3fddx 4s infinite linear;
+        }
+
+        .hypnotic::before,
+        .hypnotic::after {
+           content: "";
+           grid-area: 1/1;
+           margin: auto;
+           width: 70.7%;
+           height: 70.7%;
+           border: 2.2px solid #ffffff;
+           animation: inherit;
+        }
+
+        .hypnotic::after {
+           width: 50%;
+           height: 50%;
+           border: 2.2px solid #ffffff;
+           animation-duration: 2s;
+        }
+
+        @keyframes hypnotic-q3fddx {
+           100% {
+              transform: rotate(1turn);
+            }
+        }
+        </style>
         <div class="glitch-wrapper">
    <div class="glitch" data-glitch="Games">Games</div>
 </div>
@@ -166,6 +200,7 @@
         <a href="https://mr-milky-way.github.io/bloons-td/" class="button">Play Bloons TD</a>
         <a href="https://mr-milky-way.github.io/bloons-td-2/" class="button">Play Bloons TD 2</a>
         <a href="https://mr-milky-way.github.io/breaking-the-bank/" class="button">Play Breaking The Bank</a>
+        <a href="https://mr-milky-way.github.io/stealing-the-diamond/" class="button">Play Stealing The Diamond</a>
         
         Andrew Douglass 2023 All rights reserved
     </div>
